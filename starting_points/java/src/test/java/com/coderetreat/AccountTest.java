@@ -17,7 +17,7 @@ public class AccountTest {
 
 
     @Test
-    public void test() {
+    public void testOneDeposite() {
         account.deposite(500);
 
         assertThat(account.getEntries().size()).isEqualTo(1);
