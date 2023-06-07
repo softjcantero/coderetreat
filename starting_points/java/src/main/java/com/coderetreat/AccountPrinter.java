@@ -5,7 +5,9 @@ public class AccountPrinter {
 
 
     public String printStatement() {
-        return "Date\t\tAmount\t\tBalance";
+        StringBuilder sb = new StringBuilder("Date\t\tAmount\t\tBalance");
+
+        return sb.toString();
     }
 
 }
