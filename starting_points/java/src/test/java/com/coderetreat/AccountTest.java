@@ -35,8 +35,8 @@ public class AccountTest {
         assertThat(account.getEntries().get(0).getAmount()).isEqualTo(500);
         assertThat(account.getEntries().get(0).getBalance()).isEqualTo(500);
 
-        assertThat(account.getEntries().get(2).getAmount()).isEqualTo(-200);
-        assertThat(account.getEntries().get(0).getBalance()).isEqualTo(300);
+        assertThat(account.getEntries().get(1).getAmount()).isEqualTo(-200);
+        assertThat(account.getEntries().get(1).getBalance()).isEqualTo(300);
 
     }
 
