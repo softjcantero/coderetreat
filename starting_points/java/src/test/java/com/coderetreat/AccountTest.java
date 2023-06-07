@@ -25,4 +25,19 @@ public class AccountTest {
         assertThat(account.getEntries().get(0).getBalance()).isEqualTo(500);
     }
 
+    @Test
+    public void testOneDepositeAndOneWithdraw() {
+        account.deposite(500);
+        account.withdraw(200);
+
+        assertThat(account.getEntries().size()).isEqualTo(2);
+
+        assertThat(account.getEntries().get(0).getAmount()).isEqualTo(500);
+        assertThat(account.getEntries().get(0).getBalance()).isEqualTo(500);
+
+        assertThat(account.getEntries().get(2).getAmount()).isEqualTo(-200);
+        assertThat(account.getEntries().get(0).getBalance()).isEqualTo(300);
+
+    }
+
 }
